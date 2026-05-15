@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ijw26qq1wx1y"]
+
+[ext_resource type="Texture2D" uid="uid://b2noklu0k51w2" path="res://assets/kenney_platformer-art-deluxe/Buildings expansion/Tiles/houseBeigeTopMid.png" id="1_5ruwd"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5ruwd"]
+normal = Vector2(-0.0070920205, -0.9999749)
+distance = -578.0138
+
+[node name="chao" type="StaticBody2D" unique_id=1734224236]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=567925480]
+position = Vector2(1037, 613)
+scale = Vector2(29.6, 1)
+texture = ExtResource("1_5ruwd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1265745636]
+shape = SubResource("WorldBoundaryShape2D_5ruwd")
